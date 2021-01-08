@@ -34,12 +34,8 @@ window.addEventListener('storage', function (e) {
   }
 })
 
-const now = new Date()
-console.log(now.toString())
+const now = moment()
+now.add(1, 'year').subtract(20, 'days')
+console.log(now.format('MMMM Do YYYY'))
 
-console.log(`Year: ${now.getFullYear()}`)
-console.log(`Month: ${now.getMonth()}`)
-console.log(`Day: ${now.getDate()}`)
-console.log(`Hour: ${now.getHours()}`)
-console.log(`Minutes: ${now.getMinutes()}`)
-console.log(`Seconds: ${now.getSeconds()}`)
+
