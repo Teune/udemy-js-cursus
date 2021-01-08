@@ -33,3 +33,13 @@ window.addEventListener('storage', function (e) {
     renderNotes(notes, filters)
   }
 })
+
+const now = new Date()
+console.log(now.toString())
+
+console.log(`Year: ${now.getFullYear()}`)
+console.log(`Month: ${now.getMonth()}`)
+console.log(`Day: ${now.getDate()}`)
+console.log(`Hour: ${now.getHours()}`)
+console.log(`Minutes: ${now.getMinutes()}`)
+console.log(`Seconds: ${now.getSeconds()}`)
